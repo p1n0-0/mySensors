@@ -1,0 +1,28 @@
+<ion-view view-title="Camera">
+  <ion-content>
+
+    <div class="list card">
+
+      <div class="item item-image">
+        <img src="{{photo}}">
+      </div>
+
+      <a class="item item-icon-left positive" ng-click="takePhoto(1)">
+        <i class="icon ion-camera"></i>
+        Take photo
+      </a>
+
+      <a class="item item-icon-left positive" ng-click="takePhoto(0)">
+        <i class="icon ion-image"></i>
+        Select photo library
+      </a>
+
+      <a class="item item-icon-left positive" ng-click="scanCode()">
+        <i class="icon ion-ios-barcode-outline"></i>
+        Scan code
+      </a>
+
+    </div>
+
+  </ion-content>
+</ion-view>

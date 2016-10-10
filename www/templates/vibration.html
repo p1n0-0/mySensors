@@ -1,0 +1,23 @@
+<ion-view view-title="Vibration">
+  <ion-content>
+
+    <div class="list">
+
+      <div class="item item-divider">
+        Select duration
+      </div>
+
+      <div class="item range range-assertive">
+        <i class="icon ion-minus-round"></i>
+        <input type="range" ng-model="duration" min="100" max="5000" value="1000">
+        <i class="icon ion-plus-round"></i>
+      </div>
+
+    </div>
+
+    <button class="button button-full icon-left ion-radio-waves button-assertive" ng-click="vibrate(duration);">
+      Vibrate for {{round(duration/1000)}} seconds
+    </button>
+
+  </ion-content>
+</ion-view>
